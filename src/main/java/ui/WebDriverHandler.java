@@ -31,11 +31,12 @@ public class WebDriverHandler {
 
     public static void closeBrowser() {
         getDriver().quit();
+        webDriver = null;
     }
 
     public static WebDriverWait getWait() {
-        if(webDriverWait == null) {
-            webDriverWait = new WebDriverWait(getDriver(),Duration.ofSeconds(20));
+        if (webDriverWait == null) {
+            webDriverWait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
         }
         return webDriverWait;
     }
