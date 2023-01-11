@@ -20,6 +20,8 @@ public class HomePage {
     private WebElement demoAccountBtn;
     @FindBy(xpath = "//div[@class='buttons-wrap']//div[contains(@class,'col-sm-6 hidden-xs')]//*[contains(text(),' OPEN AN ACCOUNT ')]")
     private WebElement openAccountBtn;
+
+    //try locator ".nav-logo > li" (or similar xpath) :)
     @FindBy(xpath = "//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li")
     List<WebElement> navListItems; //= WebDriverHandler.getDriver().findElements(By.xpath("//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li"));
 
@@ -52,6 +54,8 @@ public class HomePage {
         return openAccountBtn.isDisplayed();
     }
 
+    //it works, but it's not optimal :) there's an assertion that helps you verify if two objects are equal, including collections -
+    //so if you extract texts from these elements, it'll be easier!
     public boolean foundNavListItems() {
         int flag = 0;
         for (WebElement listItem : navListItems) {
