@@ -28,11 +28,6 @@ public class HomePage {
     @FindBy(xpath = "//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li")
     List<WebElement> navListItems; //= WebDriverHandler.getDriver().findElements(By.xpath("//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li"));
 
-
-    public HomePage() {
-        PageFactory.initElements(WebDriverHandler.getDriver(), this);
-    }
-
     public void open() {
         WebDriverHandler.openPage(url);
     }

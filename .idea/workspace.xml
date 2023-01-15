@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="changed code for Header Menu test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTests/HomePageTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="changed code for Page Factory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +113,7 @@
       <workItem from="1673174909877" duration="3582000" />
       <workItem from="1673253437928" duration="6219000" />
       <workItem from="1673352669791" duration="2610000" />
-      <workItem from="1673790989277" duration="8293000" />
+      <workItem from="1673790989277" duration="8623000" />
     </task>
     <task id="LOCAL-00001" summary="finalized Homework 9">
       <created>1673353289059</created>
@@ -139,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673800804151</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changed code for Page Factory">
+      <created>1673803613396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673803613396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +164,7 @@
     <MESSAGE value="finalized Homework 9" />
     <MESSAGE value="added code for closeBrowser" />
     <MESSAGE value="changed code for Header Menu test" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed code for Header Menu test" />
+    <MESSAGE value="changed code for Page Factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed code for Page Factory" />
   </component>
 </project>
