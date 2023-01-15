@@ -60,7 +60,7 @@ public class HomePage {
     //it works, but it's not optimal :) there's an assertion that helps you verify if two objects are equal, including collections -
     //so if you extract texts from these elements, it'll be easier!
     public boolean foundNavListItems() {
-        List<String> expectedMenuItems = new ArrayList<>(Arrays.asList("Homessss", "Tradingsdsss", "Platforms", "Research & Education", "Promotions", "About Us", "Partnerships"));
+        List<String> expectedMenuItems = new ArrayList<>(Arrays.asList("Home", "Trading", "Platforms", "Research & Education", "Promotions", "About Us", "Partnerships"));
         List<String> actualMenuItems = new ArrayList<>();
         for (WebElement listItem : navListItems) {
             actualMenuItems.add(listItem.getText());

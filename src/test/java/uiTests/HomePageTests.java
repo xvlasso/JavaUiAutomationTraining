@@ -1,6 +1,9 @@
 package uiTests;
 
 import dev.failsafe.internal.util.Assert;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ui.HomePage;
@@ -16,13 +19,13 @@ public class HomePageTests {
 
     @Test
     public void homePageSmokeTest() {
-        HomePage homePage = new HomePage();
-        homePage.open();
-        homePage.waitForCookiesToBeDisplayed();
-        homePage.clickAcceptCookies();
-        assertTrue(homePage.isLogoDisplayed(), "Logo wasn't displayed");
-        assertTrue(homePage.isDisplayedOpenAccountBtn(), "Open Account button wasn't displayed");
-        assertTrue(homePage.isDisplayedDemoAccountBtn(), "Demo Account button wasn't displayed");
-        assertTrue(homePage.foundNavListItems(), "Header Menu naming is wrong");
+        HomePage HomePagePg = PageFactory.initElements(WebDriverHandler.getDriver(),HomePage.class);
+        HomePagePg.open();
+        HomePagePg.waitForCookiesToBeDisplayed();
+        HomePagePg.clickAcceptCookies();
+        assertTrue(HomePagePg.isLogoDisplayed(), "Logo wasn't displayed");
+        assertTrue(HomePagePg.isDisplayedOpenAccountBtn(), "Open Account button wasn't displayed");
+        assertTrue(HomePagePg.isDisplayedDemoAccountBtn(), "Demo Account button wasn't displayed");
+        assertTrue(HomePagePg.foundNavListItems(), "Header Menu naming is wrong");
     }
 }
