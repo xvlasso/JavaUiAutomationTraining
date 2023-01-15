@@ -1,10 +1,13 @@
 package ui;
 
+import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class HomePage {
@@ -57,24 +60,18 @@ public class HomePage {
     //it works, but it's not optimal :) there's an assertion that helps you verify if two objects are equal, including collections -
     //so if you extract texts from these elements, it'll be easier!
     public boolean foundNavListItems() {
-        int flag = 0;
+        List<String> expectedMenuItems = new ArrayList<>(Arrays.asList("Homessss", "Tradingsdsss", "Platforms", "Research & Education", "Promotions", "About Us", "Partnerships"));
+        List<String> actualMenuItems = new ArrayList<>();
         for (WebElement listItem : navListItems) {
-            if (listItem.getText().trim().equalsIgnoreCase("Home")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("Trading")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("Platforms")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("Research & Education")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("Promotions")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("About Us")) {
-                flag++;
-            } else if (listItem.getText().trim().equalsIgnoreCase("Partnerships")) {
-                flag++;
+            actualMenuItems.add(listItem.getText());
+        }
+        boolean flag = true;
+        for (int i = 0; i < expectedMenuItems.size(); i++) {
+            if (!actualMenuItems.get(i).equalsIgnoreCase(expectedMenuItems.get(i))) {
+                flag = false;
+                break;
             }
         }
-        return flag == 7;
+        return flag;
     }
 }

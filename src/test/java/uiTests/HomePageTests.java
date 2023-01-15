@@ -1,5 +1,6 @@
 package uiTests;
 
+import dev.failsafe.internal.util.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ui.HomePage;
@@ -22,6 +23,6 @@ public class HomePageTests {
         assertTrue(homePage.isLogoDisplayed(), "Logo wasn't displayed");
         assertTrue(homePage.isDisplayedOpenAccountBtn(), "Open Account button wasn't displayed");
         assertTrue(homePage.isDisplayedDemoAccountBtn(), "Demo Account button wasn't displayed");
-        assertTrue(homePage.foundNavListItems(), "Navigation Menu naming is wrong");
+        assertTrue(homePage.foundNavListItems(), "Header Menu naming is wrong");
     }
 }
