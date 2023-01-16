@@ -2,6 +2,7 @@ package ui;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
@@ -25,6 +26,10 @@ public class HomePage {
     //try locator ".nav-logo > li" (or similar xpath) :)
     @FindBy(xpath = "//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li")
     List<WebElement> navListItems; //= WebDriverHandler.getDriver().findElements(By.xpath("//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li"));
+
+    public HomePage(){
+        PageFactory.initElements(WebDriverHandler.getDriver(),this);
+    }
 
     public void open() {
         WebDriverHandler.openPage(url);
@@ -52,19 +57,11 @@ public class HomePage {
 
     //it works, but it's not optimal :) there's an assertion that helps you verify if two objects are equal, including collections -
     //so if you extract texts from these elements, it'll be easier!
-    public boolean foundNavListItems() {
-        List<String> expectedMenuItems = new ArrayList<>(Arrays.asList("Home", "Trading", "Platforms", "Research & Education", "Promotions", "About Us", "Partnerships"));
+    public List<String> foundNavListItems() {
         List<String> actualMenuItems = new ArrayList<>();
         for (WebElement listItem : navListItems) {
-            actualMenuItems.add(listItem.getText());
+            actualMenuItems.add(listItem.getText().toUpperCase());
         }
-        boolean flag = true;
-        for (int i = 0; i < expectedMenuItems.size(); i++) {
-            if (!actualMenuItems.get(i).equalsIgnoreCase(expectedMenuItems.get(i))) {
-                flag = false;
-                break;
-            }
-        }
-        return flag;
+        return actualMenuItems;
     }
 }

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="changed code for Page Factory" />
+    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="erase unused imports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uiTests/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTests/HomePageTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +117,8 @@
       <workItem from="1673174909877" duration="3582000" />
       <workItem from="1673253437928" duration="6219000" />
       <workItem from="1673352669791" duration="2610000" />
-      <workItem from="1673790989277" duration="8623000" />
+      <workItem from="1673790989277" duration="9024000" />
+      <workItem from="1673872588960" duration="1020000" />
     </task>
     <task id="LOCAL-00001" summary="finalized Homework 9">
       <created>1673353289059</created>
@@ -143,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673803613396</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed code for Page Factory">
+      <created>1673803931932</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673803931932</updated>
+    </task>
+    <task id="LOCAL-00006" summary="erase unused imports">
+      <created>1673804031501</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673804031501</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +184,7 @@
     <MESSAGE value="added code for closeBrowser" />
     <MESSAGE value="changed code for Header Menu test" />
     <MESSAGE value="changed code for Page Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed code for Page Factory" />
+    <MESSAGE value="erase unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="erase unused imports" />
   </component>
 </project>
