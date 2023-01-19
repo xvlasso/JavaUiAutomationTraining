@@ -5,6 +5,7 @@
     <test name="Simple tests">
         <classes>
             <class name="uiTests.HomePageTests"/>
+            <class name="uiTests.HomePageSelenideTests"/>
         </classes>
     </test>
 </suite>
