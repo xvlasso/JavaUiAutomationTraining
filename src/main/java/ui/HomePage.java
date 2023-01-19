@@ -24,7 +24,7 @@ public class HomePage {
     private WebElement openAccountBtn;
 
     //try locator ".nav-logo > li" (or similar xpath) :)
-    @FindBy(xpath = "//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li")
+    @FindBy(xpath = "//ul[contains(@class,'nav-logo')]/li")
     List<WebElement> navListItems; //= WebDriverHandler.getDriver().findElements(By.xpath("//ul[@id=('main-nav') and @class=('nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm')]/li"));
 
     public HomePage(){
