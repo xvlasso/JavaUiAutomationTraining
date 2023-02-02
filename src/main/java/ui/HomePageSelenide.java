@@ -18,8 +18,6 @@ public class HomePageSelenide {
     private final static SelenideElement demoAccountBtn = $x("//div[@class='buttons-wrap']//div[contains(@class,'col-sm-6 hidden-xs')]//*[contains(text(),'Open a Demo Account')]");
     private final static SelenideElement openAccountBtn = $x("//div[@class='buttons-wrap']//div[contains(@class,'col-sm-6 hidden-xs')]//*[contains(text(),' OPEN AN ACCOUNT ')]");
     private final static ElementsCollection navListItems = $$x("//ul[contains(@class,'nav-logo')]/li");
-    //private final static List<String> listOfNavListItems = navListItems.texts();
-
     public void open() {
         WebDriverHandlerSelenide.openPage(URL);
     }

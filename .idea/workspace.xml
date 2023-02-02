@@ -4,19 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="changes to foundNavListItems to return List&lt;String&gt;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/HomePageSelenide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/WebDriverHandlerSelenide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/uiTests/HomePageSelenideTests.java" afterDir="false" />
+    <list default="true" id="57c51fdf-0d22-4327-a035-1910d773841b" name="Changes" comment="Selenide Homework added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/NewHopeFilmResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/HomePageSelenide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/HomePageSelenide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -53,7 +55,53 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.HomePageSelenideTests (1)">
+  <component name="RunManager" selected="Gradle.ApiTest.test">
+    <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;apiTests.ApiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApiTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;apiTests.ApiTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HomePageSelenideTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,6 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ApiTest.test" />
+        <item itemvalue="Gradle.ApiTest" />
         <item itemvalue="Gradle.HomePageSelenideTests (1)" />
         <item itemvalue="Gradle.HomePageTests (1)" />
         <item itemvalue="Gradle.HomePageTests.homePageSmokeTest (1)" />
@@ -148,7 +198,10 @@
       <workItem from="1673790989277" duration="9024000" />
       <workItem from="1673872588960" duration="4435000" />
       <workItem from="1674051312052" duration="7553000" />
-      <workItem from="1674118443091" duration="1074000" />
+      <workItem from="1674118443091" duration="1698000" />
+      <workItem from="1675161440802" duration="3565000" />
+      <workItem from="1675258728457" duration="14541000" />
+      <workItem from="1675331820847" duration="4962000" />
     </task>
     <task id="LOCAL-00001" summary="finalized Homework 9">
       <created>1673353289059</created>
@@ -199,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673873680549</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="small change in xpath of HomePage">
+      <created>1674119683181</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119683181</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Selenide Homework added">
+      <created>1674119757444</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674119757444</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +290,8 @@
     <MESSAGE value="changed code for Page Factory" />
     <MESSAGE value="erase unused imports" />
     <MESSAGE value="changes to foundNavListItems to return List&lt;String&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to foundNavListItems to return List&lt;String&gt;" />
+    <MESSAGE value="small change in xpath of HomePage" />
+    <MESSAGE value="Selenide Homework added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Selenide Homework added" />
   </component>
 </project>

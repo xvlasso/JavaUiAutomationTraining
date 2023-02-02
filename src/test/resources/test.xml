@@ -6,6 +6,7 @@
         <classes>
             <class name="uiTests.HomePageTests"/>
             <class name="uiTests.HomePageSelenideTests"/>
+            <class name="apiTests.ApiTest"/>
         </classes>
     </test>
 </suite>
